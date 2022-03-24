@@ -1,0 +1,109 @@
+.profile {
+  width: 420px;
+  height: 230px;
+  border-top: 4px solid #161616;
+  padding: 16px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0 0 32px 0;
+  background-color: #F9F9F9;
+  border-radius: 8px;
+  &__title {
+    font-size: 19px;
+    font-weight: 500;
+    margin: 0 0 4px 0;
+  }
+  &__status {
+    display: flex;
+    align-items: center;
+    user-select: none;
+    &__main {
+      font-size: 16px;
+      font-weight: 400;
+      color: #919191;
+      margin: 0 6px 0 0;
+    }
+    &__add {
+      display: flex;
+      align-items: center;
+      padding: 4px 6px;
+      font-size: 12px;
+      border-radius: 16px;
+      font-weight: 400;
+      color: #838383;
+      background-color: #C4C4C4;
+      cursor: pointer;
+    }
+  }
+  &__info {
+    display: flex;
+    &__icon {
+      position: relative;
+      display: flex;
+      width: 124px;
+      height: 124px;
+      margin: 0 14px 8px 0;
+      user-select: none;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 100%;
+      }
+      span {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 48px;
+        height: 48px;
+        right: 4px;
+        bottom: 4px;
+        font-size: 30px;
+        border-radius: 100%;
+        background-color: #F9F9F9;
+      }
+    }
+  }
+  &__quote {
+    font-size: 10px;
+    color: #D5D5D5;
+    letter-spacing: 1px;
+  }
+}
+.profileContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 6px 0;
+  &__job {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  &__location {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 400;
+    color: #6D6D6D;
+    &__flag {
+      display: flex;
+      width: 12px;
+      height: 8px;
+      margin: 0 6px 0 0;
+      background-color: green;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  &__title {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  &__stats {
+    display: flex;
+    align-items: center;
+  }
+}

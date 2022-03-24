@@ -1,0 +1,33 @@
+.status {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #898989;
+  margin: 0 14px 0 0;
+  &__box {
+    appearance: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    border: 1px solid #c4c4c4;
+    border-radius: 2px;
+    margin: 0 6px 0 0;
+    &:checked {
+      &:before {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 2px;
+        background-color: #4486FF;
+      }
+    }
+  }
+  &:last-child {
+    margin: 0;
+  }
+}
